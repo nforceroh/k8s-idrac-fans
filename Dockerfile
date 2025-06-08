@@ -18,7 +18,7 @@ ENV \
   KEEP_THIRD_PARTY_PCIE_CARD_COOLING_RESPONSE_STATE_ON_EXIT=false
 
 ### Install Dependencies
-RUN apk add --no-cache ipmitool 
+RUN apk add --no-cache ipmitool grep
 
 ### Add Files
 ADD --chmod=755 /content/etc/s6-overlay /etc/s6-overlay
